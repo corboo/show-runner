@@ -197,7 +197,7 @@ Write the full script:"""
                                 "anthropic-version": "2023-06-01"
                             },
                             json={
-                                "model": "claude-sonnet-4-latest",
+                                "model": "claude-sonnet-4-20250514",
                                 "max_tokens": 8192,
                                 "messages": [{"role": "user", "content": prompt}]
                             },
