@@ -1,0 +1,37 @@
+{
+  "claire": {
+    "name": "Claire Delish",
+    "role": "Food personality",
+    "description": "Warm, nurturing food personality. Cozy, kitchen-focused visuals.",
+    "voice_id": "09eccfe9-8068-42c3-8f0a-e91f5d50d160",
+    "voice_provider": "hume"
+  },
+  "olly": {
+    "name": "Olly Bennett",
+    "role": "Adventurer",
+    "description": "Quirky British adventurer. Eclectic, travel-themed visuals.",
+    "voice_id": "de25054e-a18d-41d7-93f3-d9fb6fb63078",
+    "voice_provider": "hume"
+  },
+  "vv": {
+    "name": "VV Steele",
+    "role": "Gossip queen",
+    "description": "Dramatic gossip diva. Glamorous, social media aesthetic.",
+    "voice_id": "d513161a-3be9-4eaa-9612-711f77268b63",
+    "voice_provider": "hume"
+  },
+  "pennie": {
+    "name": "Pennie Power",
+    "role": "Finance expert",
+    "description": "Smart finance personality. Modern, organized aesthetic.",
+    "voice_id": "240fb214-35c0-4c46-ad08-ac16fe48499b",
+    "voice_provider": "hume"
+  },
+  "roxie": {
+    "name": "Roxie Rush",
+    "role": "Narrator",
+    "description": "Energetic narrator with commentary flair.",
+    "voice_id": "33e57cc2-1727-465b-ab0f-8ac4bca82e9b",
+    "voice_provider": "hume"
+  }
+}
