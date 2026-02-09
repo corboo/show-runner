@@ -29,10 +29,18 @@ def save_json(path, data):
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
 
-# Load API keys
+# Load API keys - check Streamlit secrets first, then local files
 SECRETS_DIR = Path(os.path.expanduser("~/clawd/.secrets"))
 
 def get_api_key(service):
+    # First try Streamlit secrets (for cloud deployment)
+    try:
+        if "api_keys" in st.secrets and service in st.secrets["api_keys"]:
+            return st.secrets["api_keys"][service]
+    except Exception:
+        pass
+    
+    # Fall back to local files (for local development)
     key_file = SECRETS_DIR / f"{service}.json"
     if key_file.exists():
         with open(key_file) as f:
