@@ -123,7 +123,7 @@ else:
         
         col1, col2 = st.columns([3, 1])
         with col1:
-            script_model = st.selectbox("AI Model", ["claude-3-5-sonnet", "gpt-4o", "claude-3-opus"])
+            script_model = st.selectbox("AI Model", ["claude-sonnet-4", "gpt-4o", "claude-opus-4"])
             target_lines = st.slider("Target Dialogue Lines", 20, 100, 50)
         
         script_path = production_dir / "script.md"
@@ -197,7 +197,7 @@ Write the full script:"""
                                 "anthropic-version": "2023-06-01"
                             },
                             json={
-                                "model": "claude-3-5-sonnet-20241022",
+                                "model": "claude-sonnet-4-20250514",
                                 "max_tokens": 8192,
                                 "messages": [{"role": "user", "content": prompt}]
                             },
